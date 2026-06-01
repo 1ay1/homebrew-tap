@@ -7,13 +7,12 @@
 #   brew tap 1ay1/tap
 #   brew install agentty
 #
-# On Linux this downloads the pre-built static binary from the GitHub
-# release. On macOS it builds from source — fast (~1 min) and reproducible
-# given the C++26 toolchain Homebrew ships.
+# Downloads the pre-built static binary from the GitHub release on both
+# Linux and macOS (CI publishes agentty-{linux,macos}-{arch}). No source
+# build: agentty needs C++26 (GCC), which AppleClang doesn't advertise.
 #
-# After every release: bump `version`, regenerate sha256s with
-#   `shasum -a 256 dist/agentty-linux-{x86_64,aarch64}`
-# (release.sh emits these automatically).
+# After every release: bump `version`, regenerate sha256s from the release
+# SHA256SUMS (release.sh emits these automatically).
 class Agentty < Formula
   desc "Blazing-fast Claude in your terminal — sandboxed, airgap-capable, single static binary"
   homepage "https://github.com/1ay1/agentty"
@@ -37,20 +36,18 @@ class Agentty < Formula
   end
 
   on_macos do
-    url "https://github.com/1ay1/agentty/archive/refs/tags/v#{version}.tar.gz"
-    sha256 "9b1680c3b640e28dcb7e99304e4f372b5e072189a3afb8da0c981dca4a72e1f0"
-
-    depends_on "cmake" => :build
-    depends_on "ninja" => :build
-    depends_on "openssl@3"
+    on_arm do
+      url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-macos-arm64"
+      sha256 "89f25f13466e5201dc298ff1c56dd97fdb9d453e171251831673bdf9a2ae6df0"
+    end
+    on_intel do
+      url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-macos-x86_64"
+      sha256 "12c7013440c9ba4f4e7474e5377f46ecb81c4a7c6723b5c7cfa51f357e5b4133"
+    end
 
     def install
-      system "cmake", "-S", ".", "-B", "build", "-GNinja",
-                      "-DCMAKE_BUILD_TYPE=Release",
-                      "-DAGENTTY_STANDALONE=ON",
-                      *std_cmake_args
-      system "cmake", "--build", "build"
-      bin.install "build/agentty"
+      bin.install Dir["*"].first => "agentty"
+      chmod 0755, bin/"agentty"
     end
   end
 
