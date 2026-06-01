@@ -23,11 +23,11 @@ class Agentty < Formula
   on_linux do
     on_arm do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-linux-aarch64"
-      sha256 "b419c322b4391d606b143c488c6e95387881b27aeaeb5fcdcdb6844f68c399ac"
+      sha256 "73c487b5820d24efe19abb119f54d94eaee9b94b9caad4bdced61bba4be629b6"
     end
     on_intel do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-linux-x86_64"
-      sha256 "51805279af278092322b122bc0e619df28ca76c5c812d0a1a8a52dd263a39269"
+      sha256 "b559908ea7b7acf3ff10647e8b102a84048641566f0595f0c2356949601e55a0"
     end
 
     def install
@@ -38,7 +38,7 @@ class Agentty < Formula
 
   on_macos do
     url "https://github.com/1ay1/agentty/archive/refs/tags/v#{version}.tar.gz"
-    sha256 "218efa06cad834890dbcc891c609215ae9b6ccbd781dc3449c19bf5208d30079"
+    sha256 "9b1680c3b640e28dcb7e99304e4f372b5e072189a3afb8da0c981dca4a72e1f0"
 
     depends_on "cmake" => :build
     depends_on "ninja" => :build
