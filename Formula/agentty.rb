@@ -22,11 +22,11 @@ class Agentty < Formula
   on_linux do
     on_arm do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-linux-aarch64"
-      sha256 "0a27583c874160f7085a5159ef973095a926e3f7745e671e608faea7bf655b14"
+      sha256 "dabc11f053751d9d85a740b3db1c6fbea6402bbb64912757ccbbf5ed42dda181"
     end
     on_intel do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-linux-x86_64"
-      sha256 "789bb03db56812446610585ce1d5dc85f8e2fe778f22f37354a2a0495d5ec760"
+      sha256 "94ffaf66147845bc842664bf2b302d8674f288023927767b01522ad5a5a2861e"
     end
 
     def install
@@ -38,11 +38,11 @@ class Agentty < Formula
   on_macos do
     on_arm do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-macos-arm64"
-      sha256 "90b4e3480fe49325bcb04d950218e1564b54dedb5ee93eb0d5df168bb2dc340f"
+      sha256 "76c8e02b8cb7f97d5bf8afdc37a563be94a556b7759a01c12bb0d1e8c8c967f6"
     end
     on_intel do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-macos-x86_64"
-      sha256 "c2343ad953b01d316914431bdc8c4f2ace1b010d3bb3aba0f393d6f805df9ed3"
+      sha256 "d92b5a8c6bed48c20d0c7336e9959a4592e619691ecd617233f4a2c1cf025a05"
     end
 
     def install
