@@ -22,11 +22,11 @@ class Agentty < Formula
   on_linux do
     on_arm do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-linux-aarch64"
-      sha256 "71892ad662a18677dd73d71feacadc6f6b8ffa92a7176db2ba873a8bb2f52db2"
+      sha256 "af9a2718c0583c5fac2bae8a1ae3aefac40c703f00a0c8c9c34cc4fab9ca747c"
     end
     on_intel do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-linux-x86_64"
-      sha256 "2fdeb233efd5df02dd4c27a93b02b15ef17fb3a3622967ce155a62479e626462"
+      sha256 "e4fe99ba5bb238954ae95cd3cd1bae649c8802e327b0c42057b91b6e460cc2e0"
     end
 
     def install
