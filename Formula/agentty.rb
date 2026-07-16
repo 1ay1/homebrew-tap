@@ -22,11 +22,11 @@ class Agentty < Formula
   on_linux do
     on_arm do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-linux-aarch64"
-      sha256 "::error::agentty-linux-aarch64 missing from SHA256SUMS"
+      sha256 "f5ff9b99c75ba6405e80147d4a375627f1f267451ba822a8748479ca62f48bf0"
     end
     on_intel do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-linux-x86_64"
-      sha256 "::error::agentty-linux-x86_64 missing from SHA256SUMS"
+      sha256 "5a41dba98d81c53ea885009f955b5a5f1b87be20697a9e159772d71bea2ab09d"
     end
 
     def install
@@ -42,7 +42,7 @@ class Agentty < Formula
     end
     on_intel do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-macos-x86_64"
-      sha256 "e437ce559528d7dee252542c61f1c6ff6be87b27766269c9856cff7893bf1ff5"
+      sha256 "2fc0574e10fb43e5df61b5b643377da52d3188da2f4814b493fc4c5f6299e04d"
     end
 
     def install
