@@ -42,7 +42,7 @@ class Agentty < Formula
     end
     on_intel do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-macos-x86_64"
-      sha256 "::error::agentty-macos-x86_64 missing from SHA256SUMS"
+      sha256 "e437ce559528d7dee252542c61f1c6ff6be87b27766269c9856cff7893bf1ff5"
     end
 
     def install
