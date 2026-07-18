@@ -38,11 +38,11 @@ class Agentty < Formula
   on_macos do
     on_arm do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-macos-arm64"
-      sha256 "80857c8b3da2aca87fb352a67db88cd21f491db9ae4ea5f67e9dfa80cb558e01"
+      sha256 "8c558a4014309ff933de986195ffcafe72f31b3be4dbd85732c2b6ad4960b9de"
     end
     on_intel do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-macos-x86_64"
-      sha256 "3d7d780152b5a2c3f7c12d94deac4f6d0ec5bccc9728aa4bb13cd9a6bb775035"
+      sha256 "94cb03fe22bc7250fad9b8f33086df39b3ac7e736d011c1df44c1e9782310f01"
     end
 
     def install
