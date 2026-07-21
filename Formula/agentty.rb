@@ -22,11 +22,11 @@ class Agentty < Formula
   on_linux do
     on_arm do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-linux-aarch64"
-      sha256 "9a63394000a07624577abbc56a5849211a660827481901608eaec78a2a8999ca"
+      sha256 "::error::agentty-linux-aarch64 drift: SHA256SUMS=9a63394000a07624577abbc56a5849211a660827481901608eaec78a2a8999ca bytes=76ddc2959ea35bb4e96bfe3a1e5b1ea599812eb9c9d569422d07121d9cb78f28"
     end
     on_intel do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-linux-x86_64"
-      sha256 "9aefb16345a96a21325cd83d671510faf0680c1f6f13cc262c6eee7f1b243e8b"
+      sha256 "::error::agentty-linux-x86_64 drift: SHA256SUMS=9aefb16345a96a21325cd83d671510faf0680c1f6f13cc262c6eee7f1b243e8b bytes="
     end
 
     def install
@@ -38,7 +38,7 @@ class Agentty < Formula
   on_macos do
     on_arm do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-macos-arm64"
-      sha256 "e010ff0858fb2202af32118e81f194da43e5e90b7da0c783813cdddd078d1028"
+      sha256 "::error::agentty-macos-arm64 drift: SHA256SUMS=e010ff0858fb2202af32118e81f194da43e5e90b7da0c783813cdddd078d1028 bytes=6a6d7d1112a443c3bff3e353db339cb21a01c6e72c2791551e37576e304df2d0"
     end
     on_intel do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-macos-x86_64"
