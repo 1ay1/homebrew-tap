@@ -17,7 +17,7 @@ class Agentty < Formula
   desc "Blazing-fast Claude in your terminal — sandboxed, airgap-capable, single static binary"
   homepage "https://github.com/1ay1/agentty"
   license "MIT"
-  version "0.2.11"
+  version ""
 
   on_linux do
     on_arm do
