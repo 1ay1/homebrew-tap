@@ -17,7 +17,7 @@ class Agentty < Formula
   desc "Blazing-fast Claude in your terminal — sandboxed, airgap-capable, single static binary"
   homepage "https://github.com/1ay1/agentty"
   license "MIT"
-  version "0.9.1-rc1"
+  version "0.9.0"
 
   on_linux do
     on_arm do
@@ -41,11 +41,11 @@ class Agentty < Formula
   on_macos do
     on_arm do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-macos-arm64"
-      sha256 "::error::agentty-macos-arm64 missing from SHA256SUMS"
+      sha256 "75b97d82bb2197094fa88c8e99c3f6a055c017321730c2fee635f87d236b2ba1"
     end
     on_intel do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-macos-x86_64"
-      sha256 "::error::agentty-macos-x86_64 missing from SHA256SUMS"
+      sha256 "7bd70bc7495e0551748060e4d03a1c38d77d5b4d0d4c9516c4754e4aa11cbcbe"
     end
 
     def install
