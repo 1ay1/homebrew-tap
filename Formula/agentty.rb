@@ -17,16 +17,16 @@ class Agentty < Formula
   desc "Blazing-fast Claude in your terminal — sandboxed, airgap-capable, single static binary"
   homepage "https://github.com/1ay1/agentty"
   license "MIT"
-  version "0.9.1"
+  version "0.9.2"
 
   on_linux do
     on_arm do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-linux-aarch64"
-      sha256 "400aa3d86dcc54e14451cbb562ce02f74f5ea0c9ee417971ee70f9ae99a1a7e6"
+      sha256 "7880fc40d698e79ffdd2e545ab645e4089b496146e038452cac4b06dea60c711"
     end
     on_intel do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-linux-x86_64"
-      sha256 "f90d84983eff9f507e861e6e8c5ec817d2888d09111022ee9fcfb6944a13d32b"
+      sha256 "e7ea9b33539024acdfaf325970a93bf557fce6422aeb1f9e8d307a10c2084449"
     end
 
     def install
@@ -41,11 +41,11 @@ class Agentty < Formula
   on_macos do
     on_arm do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-macos-arm64"
-      sha256 "52687cbfef32ec4c561f4f80474e12a464ff3de1603a2c35a4362a858f1f2d48"
+      sha256 "::error::agentty-macos-arm64 missing from SHA256SUMS"
     end
     on_intel do
       url "https://github.com/1ay1/agentty/releases/download/v#{version}/agentty-macos-x86_64"
-      sha256 "41850e0bb1185a92e08b260796cfdd2c96a5090c3074c8a50ec79abc58d7ec07"
+      sha256 "::error::agentty-macos-x86_64 missing from SHA256SUMS"
     end
 
     def install
