@@ -17,16 +17,16 @@ class Agentty < Formula
   desc "Blazing-fast Claude in your terminal — sandboxed, airgap-capable, single static binary"
   homepage "https://github.com/agentty-org/agentty"
   license "MIT"
-  version "0.9.31"
+  version "0.9.32"
 
   on_linux do
     on_arm do
       url "https://github.com/agentty-org/agentty/releases/download/v#{version}/agentty-linux-aarch64"
-      sha256 "fc65bf97ce2365471c7270ecf68a67de3e0acc6114d29fea0a868b3250fe5a77"
+      sha256 "0409bda94d51c4bb5a33ca229289604079b89f0c5489704c87d4a590e3da5ecf"
     end
     on_intel do
       url "https://github.com/agentty-org/agentty/releases/download/v#{version}/agentty-linux-x86_64"
-      sha256 "21c5bc90bb9df4cdacb9a22486ce6a190dd5298b9abb216536de1e726be8b88b"
+      sha256 "702dfd5c322631b5b1b2752d965ab42cce944ad9eac699e6cda0abd8193c510d"
     end
 
     def install
@@ -41,11 +41,11 @@ class Agentty < Formula
   on_macos do
     on_arm do
       url "https://github.com/agentty-org/agentty/releases/download/v#{version}/agentty-macos-arm64"
-      sha256 "daeabe3495bae4d685885e85afcb392be4bc9080dcd1b7975f92fda9d5cbb6b4"
+      sha256 "41f5f8ace0f5518f7cbd1ee009cf4373f5ef95fa677fe2a7cdfebf0a4eb1d453"
     end
     on_intel do
       url "https://github.com/agentty-org/agentty/releases/download/v#{version}/agentty-macos-x86_64"
-      sha256 "087b336bf05ab283b25fbd1888be365ba72348ecbe406f0ae2127221fb944d45"
+      sha256 "83806aeac00e074e0111fc24d3a5be378bf5a8b7788b2819ad2397d65e9e9d69"
     end
 
     def install
