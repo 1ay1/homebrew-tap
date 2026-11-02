@@ -41,7 +41,7 @@ class Agentty < Formula
   on_macos do
     on_arm do
       url "https://github.com/agentty-org/agentty/releases/download/v#{version}/agentty-macos-arm64"
-      sha256 "::error::agentty-macos-arm64 missing from SHA256SUMS"
+      sha256 "b4095e8981770695ec6cf7585bb7e922c26b09b06e104363ba5de552f72d69b8"
     end
     on_intel do
       url "https://github.com/agentty-org/agentty/releases/download/v#{version}/agentty-macos-x86_64"
